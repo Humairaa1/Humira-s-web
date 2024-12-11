@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,95 @@
     <!-- tailwind and daisy UI cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
+    <style>
+        table,
+        td,
+        th {
+            border: 2px solid black;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 6px;
+        }
+    </style>
+
 </head>
 
 <body>
     <header>
-        <div
-  class="hero min-h-screen"
-  style="background-image: url(/image/bg.jpg);">
-  <div class="hero-overlay"></div>
-  <div class="hero-content text-neutral-content text-center">
-    <div class="max-w-2xl">
-        <!-- rounded profile start  -->
-        <div class="avatar">
-            <div class="w-40 rounded-full border-[#fede00] border-[10px]">
-              <img src="./image/small-profile.jpg" />
+        <div class="hero min-h-screen" style="background-image: url(/image/bg.jpg);">
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-2xl">
+                    <!-- rounded profile start  -->
+                    <div class="avatar">
+                        <div class="w-40 rounded-full border-[#fede00] border-[10px]">
+                            <img src="./image/small-profile.jpg" />
+                        </div>
+                    </div>
+                    <!-- rounded profile end  -->
+                    <h1 class="mb-5 text-4xl md:text-8xl font-bold">Humira Alam</h1>
+                    <p class="mb-5 text-xl md:text-3xl">
+                        FRONT-END DEVELOPER
+                    </p>
+                    <p class="text-xl text-[#0000ee] underline">Know more about me</p>
+                </div>
             </div>
-          </div>
-          <!-- rounded profile end  -->
-      <h1 class="mb-5 text-8xl font-bold">Humira Alam</h1>
-      <p class="mb-5 text-3xl">
-        FRONT-END DEVELOPER
-      </p>
-      <p class="text-xl text-[#0000ee] underline">Know more about me</p>
-    </div>
-  </div>
-</div>
+        </div>
     </header>
+    <main class="mt-20 gap-10 flex flex-col lg:flex-row w-11/12 mx-auto">
+        <div class="w-1/2 mt-12">
+            <img src="./image/large-profile.jpg" alt="">
+        </div>
+        <div class="w-1/2">
+            <p class="text-lg mb-8">As a dedicated front-end developer, I specialize in creating visually engaging and
+                user-friendly web interfaces. My expertise lies in translating design concepts into responsive,
+                interactive websites using HTML, CSS, and JavaScript. With a keen eye for detail and a passion for
+                clean, efficient code, I strive to enhance user experiences across various devices and platforms.
+                Continuously learning and adapting to new technologies, I am committed to staying at the forefront of
+                the ever-evolving web development landscape. My goal is to deliver seamless, high-quality digital
+                solutions that delight users and meet business objectives.</p>
+            <h1 class="text-2xl font-bold">Skill Set:</h1>
+            <ul class="text-lg list-disc ml-12 my-8">
+                <li>Proficient in HTML5, CSS3, and JavaScript (ES6+)</li>
+                <li>Experienced with front-end frameworks and libraries (React, Angular)</li>
+                <li>Skilled in responsive design and cross-browser compatibility</li>
+                <li>Familiar with version control systems (Git, GitHub)</li>
+                <li>Knowledge of web performance optimization techniques</li>
+                <li>Strong debugging and problem-solving abilities</li>
+            </ul>
+            <h1 class="text-2xl font-bold mb-5">Languages Known</h1>
+            <table>
+                <tr class="bg-[#d7d869]">
+                    <th>Language</th>
+                    <th>Proficiency Level</th>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>Fluent</td>
+                </tr>
+                <tr>
+                    <td>Swedish</td>
+                    <td>Learning</td>
+                </tr>
+                <tr>
+                    <td>French</td>
+                    <td>Basic</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer class="bg-[#fede00] text-center py-8 mt-12">
+        <p class="text-4xl font-bold text-white">Email me at <span class="text-[#270369]">humira87@gmail.com</span></p>
+    </footer>
 </body>
+
 </html>
